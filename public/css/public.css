@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin:0;padding:0; outline:none;}
+html {height:100%; font-size:11pt; /*overflow:hidden;*/}
+html.active{font-size:12.5pt;}
+body, p, ul, table, dl{ line-height:1.6; letter-spacing:0.02em; font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Yu Gothic", YuGothic, 'Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif; color: #1c1c1c;}
+
+body {margin:0; padding:0; background:#555; text-align:center; scrolling:yes; position:relative; -webkit-text-size-adjust: 100%;}
+a, a:visited{color:#222; text-decoration:none; overflow:hidden; outline:none;}
+a:hover{color: #f29400;}
+
+img{border:none; vertical-align: top;}
+table{border-collapse:collapse;}
+ul{list-style-type:none;}
+
+h1, h2, h3{font-weight:bold; font-size: 1rem; color: #333; letter-spacing: 0.1em;}
+h2.screen-reader-text{display: none;}
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : COMMON : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#wrap{background: #FFF; min-width: 990px;}
+
+/*HEADER*/
+header{height: 150px; background: #FFF; border-bottom: 3px solid #e9ebec;}
+header div.inner{padding:0; margin: 0 auto; width: 990px;}
+header div.inner div.aboveBlock{height: 30px; padding: 24px 0; _zoom:1; overflow: hidden;}
+header div.inner div.aboveBlock ul.sizeList{float: right; width: 100px; height: 22px; margin: 2px 0; display: table; border: 2px solid #999; border-radius: 3px; font-size: 11pt;}
+header div.inner div.aboveBlock ul.sizeList li{display: table-cell; width: 50%; font-weight: bold; color: #999; color: #999; line-height: 22px; cursor: pointer;}
+header div.inner div.aboveBlock ul.sizeList li.active{color: #FFF; background: #999;}
+header div.inner div.aboveBlock p.size{float: right; padding: 0 10px 0 30px; line-height: 30px; font-size: 9.5pt;}
+header div.inner div.aboveBlock div.searchWrap{width: 280px; height: 30px; float: right; display: table;}
+header div.inner div.aboveBlock div.gsc-control-cse{padding: 0!important;}
+header div.inner div.aboveBlock .gsc-input{margin-top: 0!important; vertical-align: top;}
+header div.inner div.aboveBlock table.gsc-search-box td{vertical-align: top;}
+header div.inner div.aboveBlock input.gsc-search-button-v2{margin: 0;}
+
+header div.inner div.bottomBlock{height: 50px; _zoom:1; overflow: hidden;}
+header div.inner div.bottomBlock h1, header div.inner div.bottomBlock p.siteTitle{width: 215px; float: left;}
+header div.inner div.bottomBlock ul.menuList{width: 750px; float: right; display: table; table-layout: fixed;}
+header div.inner div.bottomBlock ul.menuList li{width: 16.5%; display: table-cell; vertical-align: middle; border-left: 2px solid #e6e6e6; font-size: 10.5pt; line-height: 1.5; font-weight: bold;}
+header div.inner div.bottomBlock ul.menuList li:first-child{width: 17.5%;}
+header div.inner div.bottomBlock ul.menuList li:last-child{border: none;}
+header div.inner div.bottomBlock ul.menuList li a{display: table-cell; width: 200px; height: 47px; padding: 3px 0 0 0; color: #222; vertical-align: middle;}
+header div.inner div.bottomBlock ul.menuList li a.active{color: #f29400;}
+header div.inner div.bottomBlock ul.menuList li:last-child a{background: #f29400; color: #FFF;}
+
+div.breadcrumbs{}
+div.breadcrumbs ul{width: 960px; text-align: left; margin: 0 auto; padding: 15px 0;}
+div.breadcrumbs ul li{display: inline-block; padding: 0 10px 0 0; font-size: 0.85rem;}
+div.breadcrumbs ul li:first-child{padding-left: 20px; background: url(/img/home.png) no-repeat left center; background-size:12px 12px;}
+div.breadcrumbs ul li a{text-decoration: underline;}
+
+/*MAIN WRAP*/
+#content{min-height: 300px;}
+
+/*FOOTER*/
+p.btnUp{width: 980px; margin: 0 auto; padding: 30px 0 50px; background: #FFF; text-align: right;}
+p.btnUp a{color: #333; font-weight: bold; background: url(/img/vector_up.png) no-repeat right center; background-size: 40px 40px; padding: 15px 50px 15px 0;}
+footer{background: #EEE;}
+footer a{text-decoration: underline;}
+footer div.inner{padding: 25px 0; margin: 0 auto; width: 990px; _zoom:1; overflow: hidden; text-align: left;}
+footer div.inner div.left{width: 130px; float: left;}
+footer div.inner div.center{width: 400px; float: left;}
+footer div.inner div.center p{font-size: 0.9rem; line-height: 1.5;}
+footer div.inner div.center p.title{font-size: 1rem; font-weight: bold; padding: 0 0 5px;}
+footer div.inner div.right{width: 100px; float: right; padding: 43px 0 0;}
+footer p.copyright{background: #555; color: #FFF; font-size: 0.8rem; line-height: 35px;}
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : INDEX : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#content div.indexVisualWrap{height: 450px; background: #e9ebec; border-bottom: 3px solid #e9ebec; position: relative;}
+#content div.indexVisualWrap div.left{width: 60%; height: 100%; position: absolute; left: 0; top: 0;}
+#content div.indexVisualWrap div.left ul{width: 100%; height: 100%; position: absolute; right: 0; top: 0;}
+#content div.indexVisualWrap div.left ul li{width: 100%; max-width: 1000px; height: 100%; position: absolute; right: 0; top: 0; display: none;}
+#content div.indexVisualWrap div.right{width: 40%; height: 100%; position: absolute; right: 0; top: 0; text-align: left;}
+#content div.indexVisualWrap div.right div.inner{padding: 0 7% 0 10%;}
+#content div.indexVisualWrap div.right div.inner p.lead1{font-size: 1.9rem; letter-spacing: 0.07em; line-height: 1.5; padding: 75px 0 30px; font-weight: bold; color: #444;}
+#content div.indexVisualWrap div.right div.inner p.lead2{font-size: 1.05rem; color: #444; padding: 0 0 35px;}
+html.active #content div.indexVisualWrap div.right div.inner p.lead1{padding-top: 65px;}
+@media screen and (max-width:1210px){
+    #content div.indexVisualWrap div.right div.inner p.lead1 br{display: none;}
+}
+@media screen and (max-width:1300px){
+    html.active #content div.indexVisualWrap div.right div.inner p.lead1 br{display: none;}
+}
+#content div.indexVisualWrap div.right div.inner p.linkBtn{width:280px;}
+#content div.indexVisualWrap div.right div.inner p.linkBtn a{line-height: 50px; background: #FFF; display: block; width: 100%; border:2px solid #444; border-radius: 5px; color: #444; text-align: center; font-size: 1.05rem; letter-spacing: 0.1em; font-weight: bold;}
+#content div.indexVisualWrap div.right div.inner p.linkBtn a span{padding: 5px 30px 5px 0; background: url(/img/vector_general.png) no-repeat right center; background-size: 22px 22px;}
+
+#content div.indexNewsWrap{padding: 60px 0 40px; width: 980px; margin: 0 auto; text-align: left; _zoom:1; overflow: hidden;}
+#content div.indexNewsWrap div.left{float: left; width: 160px;}
+#content div.indexNewsWrap div.left h2{font-size: 1.7rem;}
+#content div.indexNewsWrap div.left h2 span{border-bottom: 3px solid #f29400; padding: 0 0 5px;}
+#content div.indexNewsWrap div.right{float: right; width: 820px;}
+#content div.indexNewsWrap div.right ul{padding: 0 0 15px;}
+#content div.indexNewsWrap div.right ul li{margin: 0 0 1px 0;}
+#content div.indexNewsWrap div.right ul li a{line-height: 40px; background: #f3f4f5; display: block; width: 100%; color: #000;}
+#content div.indexNewsWrap div.right ul li a span.date{padding: 0 0 0 50px; width: 120px; display: inline-block;}
+#content div.indexNewsWrap div.right ul li a span.title{width: 640px; display: inline-block; text-decoration: underline;}
+#content div.indexNewsWrap div.right p.btnMore{text-align: right;}
+#content div.indexNewsWrap div.right p.btnMore a{text-decoration: underline; padding: 5px 0 5px 30px; background: url(/img/vector_general.png) no-repeat left center; background-size: 20px 20px;}
+
+#content div.indexInfoWrap{background: #e9ebec; padding: 40px 0 50px;}
+#content div.indexInfoWrap div.inner{width: 980px; margin: 0 auto; text-align: left;}
+#content div.indexInfoWrap div.inner h2{font-size: 1.6rem; padding: 0 0 20px;}
+#content div.indexInfoWrap div.inner h2 span{font-size: 1rem; letter-spacing: 0.02em; padding: 0 0 0 25px; font-weight: normal;}
+#content div.indexInfoWrap div.inner div.listWrap{display:flex; flex-wrap:wrap; justify-content: center;}
+#content div.indexInfoWrap div.inner div.listWrap div.block{vertical-align:top; width: 313px; margin: 0 20px 0 0; background: #FFF; border-radius: 4px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block:last-child{width: 314px; margin: 0;}
+#content div.indexInfoWrap div.inner div.listWrap div.block h3{padding: 0; font-size: 1.04rem; text-align: center;}
+#content div.indexInfoWrap div.inner div.listWrap div.block h3 a{line-height: 40px; display: block; color: #FFF; border-radius: 4px 4px 0 0; background: #bf6c41;}
+#content div.indexInfoWrap div.inner div.listWrap div.block:nth-child(2) h3 a{background: #637151;}
+#content div.indexInfoWrap div.inner div.listWrap div.block:nth-child(3) h3 a{background: #8d5458;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main{padding: 20px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list{width: 290px; _zoom:1; overflow: hidden; padding: 0 0 10px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list li{float:left; width: 115px; height: 22px; margin: 0 0 11px; padding: 0 7px 0 23px; overflow: hidden; background: url(/img/vector_general.png) no-repeat left 2px; background-size: 18px 18px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list li a{text-decoration: underline;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.linkBtn{padding: 0 0 10px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.linkBtn a{display: block; border:1px solid #555; border-radius: 3px; color:#333; font-weight: bold; text-align: center; padding: 7px 0; background: url(/img/vector_small.png) no-repeat 18px center; background-size: 6px 10px;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.titleBtn{padding: 5px 0 15px; font-size: 1.05rem;}
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.titleBtn a{display: block; border-bottom: 2px solid #888; color:#333; font-weight: bold; text-align: left; padding: 5px 0 5px 22px; background: url(/img/vector_small.png) no-repeat 6px center; background-size: 6px 10px;}
+
+#content div.indexReportWrap{background: #FFF; padding: 40px 0 50px;}
+#content div.indexReportWrap div.inner{width: 980px; margin: 0 auto; text-align: left;}
+#content div.indexReportWrap div.inner h2{font-size: 1.6rem; padding: 0 0 20px;}
+#content div.indexReportWrap div.inner h2 span{font-size: 1rem; letter-spacing: 0.02em; padding: 0 0 0 25px; font-weight: normal;}
+#content div.indexReportWrap div.inner div.indexReportList{display:flex; flex-wrap:wrap; justify-content: left;}
+#content div.indexReportWrap div.inner div.indexReportList div.block{width: 222px; padding: 0 0 0 8px; margin: 0 20px 0 0; position: relative; vertical-align: top;}
+#content div.indexReportWrap div.inner div.indexReportList div.block:nth-child(4n){margin: 0;}
+#content div.indexReportWrap div.inner div.indexReportList div.block a{display: block;}
+#content div.indexReportWrap div.inner div.indexReportList div.block p.img{padding: 0 0 10px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block p.img img{border-radius: 4px; width: 222px; height: 148px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block p.mark{width: 110px; height: 20px; position: absolute; left: 0; top: 10px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.activity p.mark{background: url(/img/cat_activity.png) no-repeat left center; background-size: 110px 20px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.column p.mark{background: url(/img/cat_column.png) no-repeat left center; background-size: 110px 20px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.oversea p.mark{background: url(/img/cat_oversea.png) no-repeat left center; background-size: 110px 20px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.domestic p.mark{background: url(/img/cat_domestic.png) no-repeat left center; background-size: 110px 20px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.activity p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_activity.png) no-repeat left center; background-size: 8px 7px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.column p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_column.png) no-repeat left center; background-size: 8px 7px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.oversea p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_oversea.png) no-repeat left center; background-size: 8px 7px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block.domestic p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_domestic.png) no-repeat left center; background-size: 8px 7px;}
+#content div.indexReportWrap div.inner div.indexReportList div.block p.date{padding: 0 0 4px; font-size: 0.85rem;}
+#content div.indexReportWrap div.inner div.indexReportList div.block p.title{font-weight: bold; font-size: 1.02rem; line-height: 1.5; padding: 0 0 20px;}
+#content div.indexReportWrap div.inner div.indexReportBtnList{display:flex; flex-wrap:wrap; justify-content: left;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p{width: 199px; padding: 0 0 0 31px; margin: 0 20px 20px 0; position: relative; vertical-align: top;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p:nth-child(4n){margin-right: 0;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p.activity{background: url(/img/vector_activity.png) no-repeat 8px 2px; background-size: 18px 18px;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p.column{background: url(/img/vector_column.png) no-repeat 8px 2px; background-size: 18px 18px;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p.oversea{background: url(/img/vector_oversea.png) no-repeat 8px 2px; background-size: 18px 18px;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p.domestic{background: url(/img/vector_domestic.png) no-repeat 8px 2px; background-size: 18px 18px;}
+#content div.indexReportWrap div.inner div.indexReportBtnList p a{text-decoration: underline;}
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : PAGE : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#content div.pageArchiveWrap{_zoom:1; overflow: hidden; width: 980px; margin: 0 auto;}
+#content div.pageArchiveWrap div.pageReportList{width: 730px; padding: 0 0 40px; float: right; text-align: left; display:flex; flex-wrap:wrap;}
+#content div.pageArchiveWrap div.pageReportList div.block{width: 222px; padding: 0 0 0 8px; margin: 0 20px 0 0; position: relative; vertical-align: top;}
+#content div.pageArchiveWrap div.pageReportList div.block:nth-child(3n){margin: 0;}
+#content div.pageArchiveWrap div.pageReportList div.block a{display: block;}
+#content div.pageArchiveWrap div.pageReportList div.block p.img{padding: 0 0 10px;}
+#content div.pageArchiveWrap div.pageReportList div.block p.img img{border-radius: 4px; width: 222px; height: 148px;}
+#content div.pageArchiveWrap div.pageReportList div.block p.mark{width: 110px; height: 20px; position: absolute; left: 0; top: 10px;}
+#content div.pageArchiveWrap div.pageReportList div.block.activity p.mark{background: url(/img/cat_activity.png) no-repeat left center; background-size: 110px 20px;}
+#content div.pageArchiveWrap div.pageReportList div.block.column p.mark{background: url(/img/cat_column.png) no-repeat left center; background-size: 110px 20px;}
+#content div.pageArchiveWrap div.pageReportList div.block.oversea p.mark{background: url(/img/cat_oversea.png) no-repeat left center; background-size: 110px 20px;}
+#content div.pageArchiveWrap div.pageReportList div.block.domestic p.mark{background: url(/img/cat_domestic.png) no-repeat left center; background-size: 110px 20px;}
+#content div.pageArchiveWrap div.pageReportList div.block.news p.mark{background: url(/img/cat_news.png) no-repeat left center; background-size: 110px 20px;}
+#content div.pageArchiveWrap div.pageReportList div.block.activity p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_activity.png) no-repeat left center; background-size: 8px 7px;}
+#content div.pageArchiveWrap div.pageReportList div.block.column p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_column.png) no-repeat left center; background-size: 8px 7px;}
+#content div.pageArchiveWrap div.pageReportList div.block.oversea p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_oversea.png) no-repeat left center; background-size: 8px 7px;}
+#content div.pageArchiveWrap div.pageReportList div.block.domestic p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_domestic.png) no-repeat left center; background-size: 8px 7px;}
+#content div.pageArchiveWrap div.pageReportList div.block.news p.mark:after{content: ""; width: 8px; height: 7px; position: absolute; left: 0; bottom: -7px; background: url(/img/shadow_news.png) no-repeat left center; background-size: 8px 7px;}
+#content div.pageArchiveWrap div.pageReportList div.block p.date{padding: 0 0 4px; font-size: 0.85rem;}
+#content div.pageArchiveWrap div.pageReportList div.block p.title{font-weight: bold; font-size: 1.02rem; line-height: 1.5; padding: 0 0 30px;}
+
+#content div.pageArchiveWrap div.nav-links{padding: 0 0 70px 260px; margin: 0 auto; text-align: center; width: 720px; clear: both;}
+#content div.pageArchiveWrap div.nav-links a, #content div.pageArchiveWrap div.nav-links span{color: #222; border: 1px solid #222; display: inline-block; margin: 0 4px; padding: 5px 13px; vertical-align: top;}
+#content div.pageArchiveWrap div.nav-links a:hover{opacity: 0.7;}
+#content div.pageArchiveWrap div.nav-links a.prev{background: url(/img/nav_prev.png) no-repeat 16px center; background-size: 10px 10px; padding: 5px 20px 5px 35px;}
+#content div.pageArchiveWrap div.nav-links a.next{background: url(/img/nav_next.png) no-repeat right 16px center; background-size: 10px 10px; padding: 5px 35px 5px 20px;}
+#content div.pageArchiveWrap div.nav-links span.current{background: #555; border-color: #555; color: #FFF;}
+#content div.pageArchiveWrap div.nav-links span.dots{color: #AAA; border-color: #AAA;}
+
+/*SINGLE or PAGE*/
+#content div.singleWrap{_zoom:1; overflow: hidden; width: 980px; margin: 0 auto;}
+#content div.singleWrap div.inner{width: 720px; padding: 0 0 40px; float: right; overflow: hidden; text-align: left;}
+#content div.singleWrap div.inner.page{padding: 40px 0 70px;}
+#content div.singleWrap div.inner a{text-decoration: underline;}
+#content div.singleWrap div.inner p{padding: 0 0 30px; _zoom:1; overflow: hidden;}
+#content div.singleWrap div.inner p.date{padding: 26px 0 30px;}
+#content div.singleWrap div.inner p.date span{margin: 0 0 0 10px; padding: 3px 10px; color: #222; background: #f6e000; font-size: 0.8rem; border-radius: 1px;}
+#content div.singleWrap div.inner p.date span.activity{background: #4196c0; color: #FFF;}
+#content div.singleWrap div.inner p.date span.column{background: #b48646; color: #FFF;}
+#content div.singleWrap div.inner p.date span.domestic{background: #c26571; color: #FFF; padding-right: 4px;}
+#content div.singleWrap div.inner p.date span.oversea{background: #70a753; color: #FFF; padding-right: 4px;}
+#content div.singleWrap div.inner p.btnBack{padding-top: 40px;}
+#content div.singleWrap div.inner p.btnBack a{color: #222; border: 1px solid #222; display: inline-block; background: url(/img/nav_prev.png) no-repeat 16px center; background-size: 10px 10px; padding: 5px 40px 5px 55px; text-decoration: none;}
+#content div.singleWrap div.inner img{max-width: 100%; height: auto;}
+#content div.singleWrap div.inner h1{font-size: 2.1em; line-height: 1.5; font-weight: normal; padding: 0 0 40px; letter-spacing: 0em;}
+#content div.singleWrap div.inner h2{font-size: 1.6em; line-height: 1.5; font-weight: normal; padding: 10px 20px; margin: 0 0 30px; letter-spacing: 0.02em; background: #EEE;}
+#content div.singleWrap div.inner h3{font-size: 1.4em; line-height: 1.5; font-weight: normal; padding: 1px 0 8px; margin: 0 0 25px; letter-spacing: 0.02em; border-bottom: 2px solid #DDD;}
+#content div.singleWrap div.inner h3.num{padding-left: 40px; position: relative;}
+#content div.singleWrap div.inner h3.num span{width: 30px; height: 27px; display: inline-block; background: #CCC; color: #FFF; border-radius: 50%; position: absolute; left: 0; top: 0; font-size: 1.1rem; text-align: center; padding: 3px 0 0 0;}
+#content div.singleWrap div.inner h4{font-size: 1.1rem; padding: 5px 0 20px;}
+#content div.singleWrap div.inner blockquote{padding: 25px 40px 0; margin: 0 0 30px; border:1px solid #CCC; color: #777; font-style: italic;}
+#content div.singleWrap div.inner blockquote p{ color: #777; font-style: italic;}
+#content div.singleWrap div.inner hr{margin: 0 0 30px; border: none; border-bottom: 8px solid #EEE;}
+#content div.singleWrap div.inner table{width: 100%; margin: 0 0 30px;}
+#content div.singleWrap div.inner table th, #content div.singleWrap div.inner table td{padding: 10px 15px; border: 1px solid #DDD; vertical-align: middle;}
+#content div.singleWrap div.inner table th{background: #EEE; width: 25%;}
+#content div.singleWrap div.inner ul{margin: 0 0 30px; padding: 0 0 0 20px; list-style-type: circle;}
+#content div.singleWrap div.inner ul li{}
+#content div.singleWrap div.inner ol{margin: 0 0 30px; padding: 0 0 0 20px;}
+#content div.singleWrap div.inner ol li{}
+#content div.singleWrap div.inner div.noteWrap{background: #fdf8f0; border:3px solid #edc47f; border-radius: 3px; position: relative; padding: 55px 45px 0; margin: 0 0 35px;}
+#content div.singleWrap div.inner div.noteWrap:after{content: "検索方法"; position: absolute; left: 0; top: 0; font-size: 1.25rem; letter-spacing: 0.1em; color: #FFF; font-weight: bold; width: 630px; height: 30px; padding: 3px 45px; background: #edc47f url(/img/mark_search.png) no-repeat 13px 5px; background-size:24px 24px;}
+#content div.singleWrap div.inner div.noteWrap p{padding: 0 0 20px;}
+#content div.singleWrap div.inner div.noteWrap a{color: #f29400; font-weight: bold;}
+#content div.singleWrap div.inner div.noteWrap a:hover{color: #E00;}
+#content div.singleWrap div.inner .en{font-family: "Times New Roman", "Times", Times, serif;}
+#content div.singleWrap div.inner span.construction{color: #f29400; border: 2px solid #f29400; padding: 5px 10px; border-radius: 2px; font-weight: bold; display: inline-block;}
+#content div.singleWrap div.inner small{font-size: 0.85em;}
+#content div.singleWrap div.inner big{font-size: 1.3em;}
+
+/*SIDEBAR*/
+#content div.sidebar{width:230px; float: left; text-align: left; padding: 0 0 40px;}
+#content div.sidebar h2{text-align: center; margin: 0 0 20px; font-weight: normal; font-size: 1.1rem; letter-spacing: 0.02em;}
+#content div.sidebar h2 a{display: block; color: #111; background: #EEE; padding: 10px 0; border-radius: 4px;}
+#content div.sidebar ul.catList{}
+#content div.sidebar ul.catList li{ padding: 0 0 14px 31px;}
+#content div.sidebar ul.catList li.activity{background: url(/img/vector_activity.png) no-repeat 8px 3px; background-size: 18px 18px;}
+#content div.sidebar ul.catList li.column{background: url(/img/vector_column.png) no-repeat 8px 3px; background-size: 18px 18px;}
+#content div.sidebar ul.catList li.oversea{background: url(/img/vector_oversea.png) no-repeat 8px 3px; background-size: 18px 18px;}
+#content div.sidebar ul.catList li.domestic{background: url(/img/vector_domestic.png) no-repeat 8px 3px; background-size: 18px 18px;}
+#content div.sidebar ul.catList li a{text-decoration: underline;}
+
+#content div.sidebar ul.btnList{padding: 0 0 15px;}
+#content div.sidebar ul.btnList li{ margin: 0 0 13px; padding: 0 7px 0 23px; overflow: hidden; background: url(/img/vector_general.png) no-repeat left 2px; background-size: 18px 18px;}
+#content div.sidebar ul.btnList li a{text-decoration: underline;}
+#content div.sidebar p.linkBtn{padding: 0 0 15px;}
+#content div.sidebar p.linkBtn a{display: block; border:1px solid #555; border-radius: 3px; color:#333; font-weight: bold; text-align: center; padding: 7px 0;}
+#content div.sidebar p.titleBtn{padding: 0 0 15px; font-size: 1.05rem;}
+#content div.sidebar p.titleBtn a{display: block; border-bottom: 2px solid #888; color:#333; font-weight: bold; text-align: left; padding: 5px 0 5px 22px; background: url(/img/vector_small.png) no-repeat 6px center; background-size: 6px 10px;}
+
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : OTHER : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+.blur{-webkit-filter: blur(40px); -ms-filter: blur(40px); filter: blur(40px);}
+
+.clearfix:after{content: "."; display: block; height: 0; font-size:0; clear: both; visibility:hidden;}
+.clearfix{display: inline-block;}
+.clear{clear:both; margin:0; padding:0;}
+
+img.aligncenter{display: block; margin: 0 auto; text-align: center;}
+img.alignleft{float:left; padding: 0 20px 15px 0;}
+img.alignright{float:right; padding: 0 0 15px 20px;}
+
+.flLeft{float:left; padding:0 25px 25px 0;}
+.flRight{float:right; padding:0 0 25px 25px;}
+
+.margin0{padding:0!important;}
+.margin5{padding:0 0 5px 0!important;}
+.margin10{padding:0 0 10px 0!important;}
+.margin15{padding:0 0 15px 0!important;}
+.margin20{padding:0 0 20px 0!important;}
+.margin25{padding:0 0 25px 0!important;}
+.margin30{padding:0 0 30px 0!important;}
+.margin35{padding:0 0 35px 0!important;}
+.margin40{padding:0 0 40px 0!important;}
+.margin45{padding:0 0 45px 0!important;}
+.margin50{padding:0 0 50px 0!important;}
+.margin60{padding:0 0 60px 0!important;}
+.margin65{padding:0 0 65px 0!important;}
+.margin70{padding:0 0 70px 0!important;}
+.margin75{padding:0 0 75px 0!important;}

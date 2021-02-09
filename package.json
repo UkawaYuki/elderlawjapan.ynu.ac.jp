@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "asset-builder -p localhost",
+    "build": "asset-builder"
+  },
+  "dependencies": {
+    "@n-works/asset-builder": "^1.2.0"
+  },
+  "devDependencies": {
+    "@n-works/lint": "^1.1.0"
+  }
+}
