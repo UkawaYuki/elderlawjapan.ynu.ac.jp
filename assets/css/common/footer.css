@@ -1,0 +1,40 @@
+@media (max-width: 767px) {
+  footer div.inner {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 35px 57px;
+  }
+
+  footer div.inner div.left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer div.inner div.left img {
+    width: 160px;
+    height: auto;
+  }
+
+  footer div.inner div.center {
+    float: none;
+    width: 100%;
+  }
+
+  footer div.inner div.right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer div.inner div.right img {
+    width: 200px;
+    height: auto;
+  }
+
+  footer div.inner div.center p.title {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

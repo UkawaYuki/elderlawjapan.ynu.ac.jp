@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* { margin: 0; padding: 0; outline: none; }
+html { height: 100%; font-size: 11pt; /* overflow:hidden; */ }
+html.active { font-size: 12.5pt; }
+
+body,
+p,
+ul,
+table,
+dl { color: #1c1c1c; font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "Yu Gothic", YuGothic, 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif; line-height: 1.6; letter-spacing: 0.02em; }
+
+body { position: relative; margin: 0; padding: 0; text-align: center; background: #555; scrolling: yes; -webkit-text-size-adjust: 100%; }
+
+a,
+a:visited { overflow: hidden; color: #222; text-decoration: none; outline: none; }
+a:hover { color: #f29400; }
+
+img { vertical-align: top; border: none; }
+table { border-collapse: collapse; }
+ul { list-style-type: none; }
+
+h1,
+h2,
+h3 { color: #333; font-weight: bold; font-size: 1rem; letter-spacing: 0.1em; }
+h2.screen-reader-text { display: none; }
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : COMMON : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#wrap { min-width: 990px; background: #fff; }
+
+/* HEADER */
+header { height: 150px; background: #fff; border-bottom: 3px solid #e9ebec; }
+header div.inner { width: 990px; margin: 0 auto; padding: 0; }
+header div.inner div.aboveBlock { height: 30px; padding: 24px 0; overflow: hidden; _zoom: 1; }
+header div.inner div.aboveBlock ul.sizeList { display: table; float: right; width: 100px; height: 22px; margin: 2px 0; font-size: 11pt; border: 2px solid #999; border-radius: 3px; }
+header div.inner div.aboveBlock ul.sizeList li { display: table-cell; width: 50%; color: #999; color: #999; font-weight: bold; line-height: 22px; cursor: pointer; }
+header div.inner div.aboveBlock ul.sizeList li.active { color: #fff; background: #999; }
+header div.inner div.aboveBlock p.size { float: right; padding: 0 10px 0 30px; font-size: 9.5pt; line-height: 30px; }
+header div.inner div.aboveBlock div.searchWrap { display: table; float: right; width: 280px; height: 30px; }
+header div.inner div.aboveBlock div.gsc-control-cse { padding: 0 !important; }
+header div.inner div.aboveBlock .gsc-input { margin-top: 0 !important; vertical-align: top; }
+header div.inner div.aboveBlock table.gsc-search-box td { vertical-align: top; }
+header div.inner div.aboveBlock input.gsc-search-button-v2 { margin: 0; }
+
+header div.inner div.bottomBlock { height: 50px; overflow: hidden; _zoom: 1; }
+
+header div.inner div.bottomBlock h1,
+header div.inner div.bottomBlock p.siteTitle { float: left; width: 215px; }
+header div.inner div.bottomBlock ul.menuList { display: table; float: right; width: 750px; table-layout: fixed; }
+header div.inner div.bottomBlock ul.menuList li { display: table-cell; width: 16.5%; font-weight: bold; font-size: 10.5pt; line-height: 1.5; vertical-align: middle; border-left: 2px solid #e6e6e6; }
+header div.inner div.bottomBlock ul.menuList li:first-child { width: 17.5%; }
+header div.inner div.bottomBlock ul.menuList li:last-child { border: none; }
+header div.inner div.bottomBlock ul.menuList li a { display: table-cell; width: 200px; height: 47px; padding: 3px 0 0 0; color: #222; vertical-align: middle; }
+header div.inner div.bottomBlock ul.menuList li a.active { color: #f29400; }
+header div.inner div.bottomBlock ul.menuList li:last-child a { color: #fff; background: #f29400; }
+
+div.breadcrumbs{}
+div.breadcrumbs ul { width: 960px; margin: 0 auto; padding: 15px 0; text-align: left; }
+div.breadcrumbs ul li { display: inline-block; padding: 0 10px 0 0; font-size: 0.85rem; }
+div.breadcrumbs ul li:first-child { padding-left: 20px; background: url(/img/home.png) no-repeat left center; background-size: 12px 12px; }
+div.breadcrumbs ul li a { text-decoration: underline; }
+
+/* MAIN WRAP */
+#content { min-height: 300px; }
+
+/* FOOTER */
+p.btnUp { width: 980px; margin: 0 auto; padding: 30px 0 50px; text-align: right; background: #fff; }
+p.btnUp a { padding: 15px 50px 15px 0; color: #333; font-weight: bold; background: url(/img/vector_up.png) no-repeat right center; background-size: 40px 40px; }
+footer { background: #eee; }
+footer a { text-decoration: underline; }
+footer div.inner { width: 990px; margin: 0 auto; padding: 25px 0; overflow: hidden; text-align: left; _zoom: 1; }
+footer div.inner div.left { float: left; width: 130px; }
+footer div.inner div.center { float: left; width: 400px; }
+footer div.inner div.center p { font-size: 0.9rem; line-height: 1.5; }
+footer div.inner div.center p.title { padding: 0 0 5px; font-weight: bold; font-size: 1rem; }
+footer div.inner div.right { float: right; width: 100px; padding: 43px 0 0; }
+footer p.copyright { color: #fff; font-size: 0.8rem; line-height: 35px; background: #555; }
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : INDEX : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#content div.indexVisualWrap { position: relative; height: 450px; background: #e9ebec; border-bottom: 3px solid #e9ebec; }
+#content div.indexVisualWrap div.left { position: absolute; top: 0; left: 0; width: 60%; height: 100%; }
+#content div.indexVisualWrap div.left ul { position: absolute; top: 0; right: 0; width: 100%; height: 100%; }
+#content div.indexVisualWrap div.left ul li { position: absolute; top: 0; right: 0; display: none; width: 100%; max-width: 1000px; height: 100%; }
+#content div.indexVisualWrap div.right { position: absolute; top: 0; right: 0; width: 40%; height: 100%; text-align: left; }
+#content div.indexVisualWrap div.right div.inner { padding: 0 7% 0 10%; }
+#content div.indexVisualWrap div.right div.inner p.lead1 { padding: 75px 0 30px; color: #444; font-weight: bold; font-size: 1.9rem; line-height: 1.5; letter-spacing: 0.07em; }
+#content div.indexVisualWrap div.right div.inner p.lead2 { padding: 0 0 35px; color: #444; font-size: 1.05rem; }
+html.active #content div.indexVisualWrap div.right div.inner p.lead1 { padding-top: 65px; }
+
+@media screen and (max-width: 1210px) {
+  #content div.indexVisualWrap div.right div.inner p.lead1 br { display: none; }
+}
+
+@media screen and (max-width: 1300px) {
+  html.active #content div.indexVisualWrap div.right div.inner p.lead1 br { display: none; }
+}
+#content div.indexVisualWrap div.right div.inner p.linkBtn { width: 280px; }
+#content div.indexVisualWrap div.right div.inner p.linkBtn a { display: block; width: 100%; color: #444; font-weight: bold; font-size: 1.05rem; line-height: 50px; letter-spacing: 0.1em; text-align: center; background: #fff; border: 2px solid #444; border-radius: 5px; }
+#content div.indexVisualWrap div.right div.inner p.linkBtn a span { padding: 5px 30px 5px 0; background: url(/img/vector_general.png) no-repeat right center; background-size: 22px 22px; }
+
+#content div.indexNewsWrap { width: 980px; margin: 0 auto; padding: 60px 0 40px; overflow: hidden; text-align: left; _zoom: 1; }
+#content div.indexNewsWrap div.left { float: left; width: 160px; }
+#content div.indexNewsWrap div.left h2 { font-size: 1.7rem; }
+#content div.indexNewsWrap div.left h2 span { padding: 0 0 5px; border-bottom: 3px solid #f29400; }
+#content div.indexNewsWrap div.right { float: right; width: 820px; }
+#content div.indexNewsWrap div.right ul { padding: 0 0 15px; }
+#content div.indexNewsWrap div.right ul li { margin: 0 0 1px 0; }
+#content div.indexNewsWrap div.right ul li a { display: block; width: 100%; color: #000; line-height: 40px; background: #f3f4f5; }
+#content div.indexNewsWrap div.right ul li a span.date { display: inline-block; width: 120px; padding: 0 0 0 50px; }
+#content div.indexNewsWrap div.right ul li a span.title { display: inline-block; width: 640px; text-decoration: underline; }
+#content div.indexNewsWrap div.right p.btnMore { text-align: right; }
+#content div.indexNewsWrap div.right p.btnMore a { padding: 5px 0 5px 30px; text-decoration: underline; background: url(/img/vector_general.png) no-repeat left center; background-size: 20px 20px; }
+
+#content div.indexInfoWrap { padding: 40px 0 50px; background: #e9ebec; }
+#content div.indexInfoWrap div.inner { width: 980px; margin: 0 auto; text-align: left; }
+#content div.indexInfoWrap div.inner h2 { padding: 0 0 20px; font-size: 1.6rem; }
+#content div.indexInfoWrap div.inner h2 span { padding: 0 0 0 25px; font-weight: normal; font-size: 1rem; letter-spacing: 0.02em; }
+#content div.indexInfoWrap div.inner div.listWrap { display: flex; flex-wrap: wrap; justify-content: center; }
+#content div.indexInfoWrap div.inner div.listWrap div.block { width: 313px; margin: 0 20px 0 0; vertical-align: top; background: #fff; border-radius: 4px; }
+#content div.indexInfoWrap div.inner div.listWrap div.block:last-child { width: 314px; margin: 0; }
+#content div.indexInfoWrap div.inner div.listWrap div.block h3 { padding: 0; font-size: 1.04rem; text-align: center; }
+#content div.indexInfoWrap div.inner div.listWrap div.block h3 a { display: block; color: #fff; line-height: 40px; background: #bf6c41; border-radius: 4px 4px 0 0; }
+#content div.indexInfoWrap div.inner div.listWrap div.block:nth-child(2) h3 a { background: #637151; }
+#content div.indexInfoWrap div.inner div.listWrap div.block:nth-child(3) h3 a { background: #8d5458; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main { padding: 20px; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list { width: 290px; padding: 0 0 10px; overflow: hidden; _zoom: 1; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list li { float: left; width: 115px; height: 22px; margin: 0 0 11px; padding: 0 7px 0 23px; overflow: hidden; background: url(/img/vector_general.png) no-repeat left 2px; background-size: 18px 18px; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main ul.list li a { text-decoration: underline; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.linkBtn { padding: 0 0 10px; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.linkBtn a { display: block; padding: 7px 0; color: #333; font-weight: bold; text-align: center; background: url(/img/vector_small.png) no-repeat 18px center; background-size: 6px 10px; border: 1px solid #555; border-radius: 3px; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.titleBtn { padding: 5px 0 15px; font-size: 1.05rem; }
+#content div.indexInfoWrap div.inner div.listWrap div.block div.main p.titleBtn a { display: block; padding: 5px 0 5px 22px; color: #333; font-weight: bold; text-align: left; background: url(/img/vector_small.png) no-repeat 6px center; background-size: 6px 10px; border-bottom: 2px solid #888; }
+
+#content div.indexReportWrap { padding: 40px 0 50px; background: #fff; }
+#content div.indexReportWrap div.inner { width: 980px; margin: 0 auto; text-align: left; }
+#content div.indexReportWrap div.inner h2 { padding: 0 0 20px; font-size: 1.6rem; }
+#content div.indexReportWrap div.inner h2 span { padding: 0 0 0 25px; font-weight: normal; font-size: 1rem; letter-spacing: 0.02em; }
+#content div.indexReportWrap div.inner div.indexReportList { display: flex; flex-wrap: wrap; justify-content: left; }
+#content div.indexReportWrap div.inner div.indexReportList div.block { position: relative; width: 222px; margin: 0 20px 0 0; padding: 0 0 0 8px; vertical-align: top; }
+#content div.indexReportWrap div.inner div.indexReportList div.block:nth-child(4n) { margin: 0; }
+#content div.indexReportWrap div.inner div.indexReportList div.block a { display: block; }
+#content div.indexReportWrap div.inner div.indexReportList div.block p.img { padding: 0 0 10px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block p.img img { width: 222px; height: 148px; border-radius: 4px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block p.mark { position: absolute; top: 10px; left: 0; width: 110px; height: 20px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.activity p.mark { background: url(/img/cat_activity.png) no-repeat left center; background-size: 110px 20px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.column p.mark { background: url(/img/cat_column.png) no-repeat left center; background-size: 110px 20px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.oversea p.mark { background: url(/img/cat_oversea.png) no-repeat left center; background-size: 110px 20px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.domestic p.mark { background: url(/img/cat_domestic.png) no-repeat left center; background-size: 110px 20px; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.activity p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_activity.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.column p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_column.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.oversea p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_oversea.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.indexReportWrap div.inner div.indexReportList div.block.domestic p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_domestic.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.indexReportWrap div.inner div.indexReportList div.block p.date { padding: 0 0 4px; font-size: 0.85rem; }
+#content div.indexReportWrap div.inner div.indexReportList div.block p.title { padding: 0 0 20px; font-weight: bold; font-size: 1.02rem; line-height: 1.5; }
+#content div.indexReportWrap div.inner div.indexReportBtnList { display: flex; flex-wrap: wrap; justify-content: left; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p { position: relative; width: 199px; margin: 0 20px 20px 0; padding: 0 0 0 23px; vertical-align: top; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p:nth-child(4n) { margin-right: 0; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p.activity { background: url(/img/vector_activity.png) no-repeat 0 2px; background-size: 18px 18px; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p.column { background: url(/img/vector_column.png) no-repeat 0 2px; background-size: 18px 18px; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p.oversea { background: url(/img/vector_oversea.png) no-repeat 0 2px; background-size: 18px 18px; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p.domestic { background: url(/img/vector_domestic.png) no-repeat 0 2px; background-size: 18px 18px; }
+#content div.indexReportWrap div.inner div.indexReportBtnList p a { text-decoration: underline; }
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : PAGE : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+#content div.pageArchiveWrap { width: 980px; margin: 0 auto; overflow: hidden; zoom: 1; }
+#content div.pageArchiveWrap div.pageReportList { display: flex; flex-wrap: wrap; float: right; width: 730px; padding: 0 0 40px; text-align: left; }
+#content div.pageArchiveWrap div.pageReportList div.block { position: relative; width: 222px; margin: 0 20px 0 0; padding: 0 0 0 8px; vertical-align: top; }
+#content div.pageArchiveWrap div.pageReportList div.block:nth-child(3n) { margin: 0; }
+#content div.pageArchiveWrap div.pageReportList div.block a { display: block; }
+#content div.pageArchiveWrap div.pageReportList div.block p.img { padding: 0 0 10px; }
+#content div.pageArchiveWrap div.pageReportList div.block p.img img { width: 222px; height: 148px; border-radius: 4px; }
+#content div.pageArchiveWrap div.pageReportList div.block p.mark { position: absolute; top: 10px; left: 0; width: 110px; height: 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.activity p.mark { background: url(/img/cat_activity.png) no-repeat left center; background-size: 110px 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.column p.mark { background: url(/img/cat_column.png) no-repeat left center; background-size: 110px 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.oversea p.mark { background: url(/img/cat_oversea.png) no-repeat left center; background-size: 110px 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.domestic p.mark { background: url(/img/cat_domestic.png) no-repeat left center; background-size: 110px 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.news p.mark { background: url(/img/cat_news.png) no-repeat left center; background-size: 110px 20px; }
+#content div.pageArchiveWrap div.pageReportList div.block.activity p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_activity.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.pageArchiveWrap div.pageReportList div.block.column p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_column.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.pageArchiveWrap div.pageReportList div.block.oversea p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_oversea.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.pageArchiveWrap div.pageReportList div.block.domestic p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_domestic.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.pageArchiveWrap div.pageReportList div.block.news p.mark::after { position: absolute; bottom: -7px; left: 0; width: 8px; height: 7px; background: url(/img/shadow_news.png) no-repeat left center; background-size: 8px 7px; content: ""; }
+#content div.pageArchiveWrap div.pageReportList div.block p.date { padding: 0 0 4px; font-size: 0.85rem; }
+#content div.pageArchiveWrap div.pageReportList div.block p.title { padding: 0 0 30px; font-weight: bold; font-size: 1.02rem; line-height: 1.5; }
+
+#content div.pageArchiveWrap div.nav-links { clear: both; width: 720px; margin: 0 auto; padding: 0 0 70px 260px; text-align: center; }
+
+#content div.pageArchiveWrap div.nav-links a,
+#content div.pageArchiveWrap div.nav-links span { display: inline-block; margin: 0 4px; padding: 5px 13px; color: #222; vertical-align: top; border: 1px solid #222; }
+#content div.pageArchiveWrap div.nav-links a:hover { opacity: 0.7; }
+#content div.pageArchiveWrap div.nav-links a.prev { padding: 5px 20px 5px 35px; background: url(/img/nav_prev.png) no-repeat 16px center; background-size: 10px 10px; }
+#content div.pageArchiveWrap div.nav-links a.next { padding: 5px 35px 5px 20px; background: url(/img/nav_next.png) no-repeat right 16px center; background-size: 10px 10px; }
+#content div.pageArchiveWrap div.nav-links span.current { color: #fff; background: #555; border-color: #555; }
+#content div.pageArchiveWrap div.nav-links span.dots { color: #aaa; border-color: #aaa; }
+
+/* SINGLE or PAGE */
+#content div.singleWrap { width: 980px; margin: 0 auto; overflow: hidden; zoom: 1; }
+#content div.singleWrap div.inner { float: right; width: 720px; padding: 0 0 40px; overflow: hidden; text-align: left; }
+#content div.singleWrap div.inner.page { padding: 40px 0 70px; }
+#content div.singleWrap div.inner a { text-decoration: underline; }
+#content div.singleWrap div.inner p { padding: 0 0 30px; overflow: hidden; _zoom: 1; }
+#content div.singleWrap div.inner p.date { padding: 26px 0 30px; }
+#content div.singleWrap div.inner p.date span { margin: 0 0 0 10px; padding: 3px 10px; color: #222; font-size: 0.8rem; background: #f6e000; border-radius: 1px; }
+#content div.singleWrap div.inner p.date span.activity { color: #fff; background: #4196c0; }
+#content div.singleWrap div.inner p.date span.column { color: #fff; background: #b48646; }
+#content div.singleWrap div.inner p.date span.domestic { padding-right: 4px; color: #fff; background: #c26571; }
+#content div.singleWrap div.inner p.date span.oversea { padding-right: 4px; color: #fff; background: #70a753; }
+#content div.singleWrap div.inner p.btnBack { padding-top: 40px; }
+#content div.singleWrap div.inner p.btnBack a { display: inline-block; padding: 5px 40px 5px 55px; color: #222; text-decoration: none; background: url(/img/nav_prev.png) no-repeat 16px center; background-size: 10px 10px; border: 1px solid #222; }
+#content div.singleWrap div.inner img { max-width: 100%; height: auto; }
+#content div.singleWrap div.inner h1 { padding: 0 0 40px; font-weight: normal; font-size: 2.1em; line-height: 1.5; letter-spacing: 0; }
+#content div.singleWrap div.inner h2 { margin: 0 0 30px; padding: 10px 20px; font-weight: normal; font-size: 1.6em; line-height: 1.5; letter-spacing: 0.02em; background: #eee; }
+#content div.singleWrap div.inner h3 { margin: 0 0 25px; padding: 1px 0 8px; font-weight: normal; font-size: 1.4em; line-height: 1.5; letter-spacing: 0.02em; border-bottom: 2px solid #ddd; }
+#content div.singleWrap div.inner h3.num { position: relative; padding-left: 40px; }
+#content div.singleWrap div.inner h3.num span { position: absolute; top: 0; left: 0; display: inline-block; width: 30px; height: 27px; padding: 3px 0 0 0; color: #fff; font-size: 1.1rem; text-align: center; background: #ccc; border-radius: 50%; }
+#content div.singleWrap div.inner h4 { padding: 5px 0 20px; font-size: 1.1rem; }
+#content div.singleWrap div.inner blockquote { margin: 0 0 30px; padding: 25px 40px 0; color: #777; font-style: italic; border: 1px solid #ccc; }
+#content div.singleWrap div.inner blockquote p { color: #777; font-style: italic; }
+#content div.singleWrap div.inner hr { margin: 0 0 30px; border: none; border-bottom: 8px solid #eee; }
+#content div.singleWrap div.inner table { width: 100%; margin: 0 0 30px; }
+
+#content div.singleWrap div.inner table th,
+#content div.singleWrap div.inner table td { padding: 10px 15px; vertical-align: middle; border: 1px solid #ddd; }
+#content div.singleWrap div.inner table th { width: 25%; background: #eee; }
+#content div.singleWrap div.inner ul { margin: 0 0 30px; padding: 0 0 0 20px; list-style-type: circle; }
+#content div.singleWrap div.inner ul li{}
+#content div.singleWrap div.inner ol { margin: 0 0 30px; padding: 0 0 0 20px; }
+#content div.singleWrap div.inner ol li{}
+#content div.singleWrap div.inner div.noteWrap { position: relative; margin: 0 0 35px; padding: 55px 45px 0; background: #fdf8f0; border: 3px solid #edc47f; border-radius: 3px; }
+#content div.singleWrap div.inner div.noteWrap::after { position: absolute; top: 0; left: 0; width: 630px; height: 30px; padding: 3px 45px; color: #fff; font-weight: bold; font-size: 1.25rem; letter-spacing: 0.1em; background: #edc47f url(/img/mark_search.png) no-repeat 13px 5px; background-size: 24px 24px; content: "検索方法"; }
+#content div.singleWrap div.inner div.noteWrap p { padding: 0 0 20px; }
+#content div.singleWrap div.inner div.noteWrap a { color: #f29400; font-weight: bold; }
+#content div.singleWrap div.inner div.noteWrap a:hover { color: #e00; }
+#content div.singleWrap div.inner .en { font-family: "Times New Roman", "Times", Times, serif; }
+#content div.singleWrap div.inner span.construction { display: inline-block; padding: 5px 10px; color: #f29400; font-weight: bold; border: 2px solid #f29400; border-radius: 2px; }
+#content div.singleWrap div.inner small { font-size: 0.85em; }
+#content div.singleWrap div.inner big { font-size: 1.3em; }
+
+/* SIDEBAR */
+#content div.sidebar { float: left; width: 230px; padding: 0 0 40px; text-align: left; }
+#content div.sidebar h2 { margin: 0 0 20px; font-weight: normal; font-size: 1.1rem; letter-spacing: 0.02em; text-align: center; }
+#content div.sidebar h2 a { display: block; padding: 10px 0; color: #111; background: #eee; border-radius: 4px; }
+#content div.sidebar ul.catList{}
+#content div.sidebar ul.catList li { padding: 0 0 14px 31px; }
+#content div.sidebar ul.catList li.activity { background: url(/img/vector_activity.png) no-repeat 8px 3px; background-size: 18px 18px; }
+#content div.sidebar ul.catList li.column { background: url(/img/vector_column.png) no-repeat 8px 3px; background-size: 18px 18px; }
+#content div.sidebar ul.catList li.oversea { background: url(/img/vector_oversea.png) no-repeat 8px 3px; background-size: 18px 18px; }
+#content div.sidebar ul.catList li.domestic { background: url(/img/vector_domestic.png) no-repeat 8px 3px; background-size: 18px 18px; }
+#content div.sidebar ul.catList li a { text-decoration: underline; }
+
+#content div.sidebar ul.btnList { padding: 0 0 15px; }
+#content div.sidebar ul.btnList li { margin: 0 0 13px; padding: 0 7px 0 23px; overflow: hidden; background: url(/img/vector_general.png) no-repeat left 2px; background-size: 18px 18px; }
+#content div.sidebar ul.btnList li a { text-decoration: underline; }
+#content div.sidebar p.linkBtn { padding: 0 0 15px; }
+#content div.sidebar p.linkBtn a { display: block; padding: 7px 0; color: #333; font-weight: bold; text-align: center; border: 1px solid #555; border-radius: 3px; }
+#content div.sidebar p.titleBtn { padding: 0 0 15px; font-size: 1.05rem; }
+#content div.sidebar p.titleBtn a { display: block; padding: 5px 0 5px 22px; color: #333; font-weight: bold; text-align: left; background: url(/img/vector_small.png) no-repeat 6px center; background-size: 6px 10px; border-bottom: 2px solid #888; }
+
+
+/* : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : OTHER : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : */
+.blur { -webkit-filter: blur(40px); -ms-filter: blur(40px); filter: blur(40px); }
+
+.clearfix::after { display: block; clear: both; height: 0; font-size: 0; visibility: hidden; content: "."; }
+.clearfix { display: inline-block; }
+.clear { clear: both; margin: 0; padding: 0; }
+
+img.aligncenter { display: block; margin: 0 auto; text-align: center; }
+img.alignleft { float: left; padding: 0 20px 15px 0; }
+img.alignright { float: right; padding: 0 0 15px 20px; }
+
+.flLeft { float: left; padding: 0 25px 25px 0; }
+.flRight { float: right; padding: 0 0 25px 25px; }
+
+.margin0 { padding: 0 !important; }
+.margin5 { padding: 0 0 5px 0 !important; }
+.margin10 { padding: 0 0 10px 0 !important; }
+.margin15 { padding: 0 0 15px 0 !important; }
+.margin20 { padding: 0 0 20px 0 !important; }
+.margin25 { padding: 0 0 25px 0 !important; }
+.margin30 { padding: 0 0 30px 0 !important; }
+.margin35 { padding: 0 0 35px 0 !important; }
+.margin40 { padding: 0 0 40px 0 !important; }
+.margin45 { padding: 0 0 45px 0 !important; }
+.margin50 { padding: 0 0 50px 0 !important; }
+.margin60 { padding: 0 0 60px 0 !important; }
+.margin65 { padding: 0 0 65px 0 !important; }
+.margin70 { padding: 0 0 70px 0 !important; }
+.margin75 { padding: 0 0 75px 0 !important; }

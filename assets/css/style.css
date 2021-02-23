@@ -1,5 +1,5 @@
 @import "./common/normalize.css";
-
-h1 {
-  font-weight: var(--bold);
-}
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/single.css";
+@import "./common/top.css";

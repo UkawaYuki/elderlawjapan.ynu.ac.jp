@@ -1,0 +1,124 @@
+#content div.indexReportWrap div.inner div.indexReportList div.block {
+  padding: 0 0 30px 8px;
+}
+
+#content div.indexReportWrap div.inner div.indexReportBtnList {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  #content div.indexVisualWrap {
+    height: auto;
+  }
+
+  #content div.indexVisualWrap div.left {
+    position: static;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  #content div.indexVisualWrap div.left ul {
+    position: static;
+  }
+
+  #content div.indexVisualWrap div.left ul li {
+    position: static;
+  }
+
+  #content div.indexVisualWrap div.right {
+    position: static;
+    width: 100%;
+  }
+
+  #content div.indexVisualWrap div.right div.inner p.lead1 {
+    padding-top: 40px;
+  }
+
+  #content div.indexVisualWrap div.right div.inner p.linkBtn {
+    padding-bottom: 55px;
+  }
+
+  #content div.indexNewsWrap {
+    width: auto;
+    padding: 60px 20px 40px;
+  }
+
+  #content div.indexNewsWrap div.left {
+    float: none;
+    margin-bottom: 18px;
+  }
+
+  #content div.indexNewsWrap div.right {
+    float: none;
+    width: auto;
+  }
+
+  #content div.indexNewsWrap div.right ul li a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    padding: 10px 0;
+    line-height: 1.5;
+  }
+
+  #content div.indexNewsWrap div.right ul li a span.date {
+    flex-shrink: 0;
+    width: 100px;
+    padding: 0 0 0 17px;
+  }
+
+  #content div.indexNewsWrap div.right ul li a span.title {
+    width: auto;
+    line-height: 1.6;
+  }
+
+  #content div.indexInfoWrap div.inner {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  #content div.indexInfoWrap div.inner h2 {
+    width: 313px;
+    margin: 0 auto;
+  }
+
+  #content div.indexInfoWrap div.inner h2 span {
+    display: block;
+    padding: 0;
+  }
+
+  #content div.indexInfoWrap div.inner div.listWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content div.indexInfoWrap div.inner div.listWrap div.block {
+    max-width: 100%;
+    margin: 0 0 30px;
+  }
+
+  #content div.indexReportWrap div.inner {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  #content div.indexReportWrap div.inner div.indexReportList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content div.indexReportWrap div.inner div.indexReportList div.block {
+    margin: 0 0 20px;
+  }
+
+  #content div.indexReportWrap div.inner h2 {
+    margin-left: calc(50% - 106px);
+  }
+
+  #content div.indexReportWrap div.inner h2 span {
+    display: block;
+    padding: 0;
+  }
+}

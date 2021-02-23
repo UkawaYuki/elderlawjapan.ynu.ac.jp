@@ -1,6 +1,6 @@
 {
   "src": "assets",
-  "dist": "public/wp/wp-content/themes/sample/assets",
+  "dist": "public/wp/wp-content/themes/elderlaw2021/assets",
   "directories": {
     "html": [],
     "css": ["css"],
