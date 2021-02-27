@@ -1,0 +1,45 @@
+.pageArchiveWrap .navigation.pagination {
+  width: 100%;
+}
+
+#content div.pageArchiveWrap div.nav-links {
+  width: auto;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  #content div.pageArchiveWrap {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  #content div.pageArchiveWrap div.pageReportList {
+    flex-direction: column;
+    align-items: center;
+    float: none;
+    width: 100%;
+  }
+
+  #content div.pageArchiveWrap div.pageReportList div.block {
+    width: 100%;
+    max-width: 444px;
+    margin: 0;
+  }
+
+  #content div.pageArchiveWrap div.pageReportList div.block p.img {
+    position: relative;
+    padding-bottom: 66.667%;
+  }
+
+  #content div.pageArchiveWrap div.pageReportList div.block p.img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #content div.pageArchiveWrap div.nav-links a,
+  #content div.pageArchiveWrap div.nav-links span {
+    margin: 0 4px 4px;
+  }
+}

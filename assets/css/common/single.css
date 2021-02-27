@@ -21,6 +21,10 @@
     display: block;
   }
 
+  .breadcrumbs {
+    padding: 0 20px;
+  }
+
   #content div.singleWrap {
     flex-direction: column;
     width: auto;

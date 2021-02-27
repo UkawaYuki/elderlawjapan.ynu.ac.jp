@@ -30,12 +30,13 @@ header div.inner div.bottomBlock ul.menuList li:last-child a {
     height: 3px;
     background-color: #222;
     border-radius: 1.5px;
+    transform-origin: center;
     transition: 0.3s;
   }
 
-  .burger.open span {
+  /* .burger.open span {
     background-color: #fff;
-  }
+  } */
 
   .burger span:nth-child(1) {
     top: 0;
@@ -50,15 +51,18 @@ header div.inner div.bottomBlock ul.menuList li:last-child a {
   }
 
   .burger.open span:nth-child(1) {
-    transform: rotate(45deg) translateY(9px) translateX(0);
+    top: 11px;
+    transform: rotate(45deg);
   }
 
   .burger.open span:nth-child(2) {
-    transform: rotate(-45deg) translateY(-8px) translateX(-1px);
+    top: 11px;
+    transform: rotate(-45deg);
   }
 
   .burger.open span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-16px) translateX(6px);
+    top: 11px;
+    transform: rotate(-45deg);
   }
 
   header {
@@ -83,6 +87,7 @@ header div.inner div.bottomBlock ul.menuList li:last-child a {
 
   header div.inner div.bottomBlock h1,
   header div.inner div.bottomBlock p.siteTitle {
+    z-index: 3;
     float: none;
     width: 123px;
 
@@ -94,9 +99,40 @@ header div.inner div.bottomBlock ul.menuList li:last-child a {
 
   header div.inner div.bottomBlock ul.menuList {
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
     display: flex;
+    flex-direction: column;
     float: none;
-    width: auto;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #fff;
     transform: translateY(-100%);
+  }
+
+  header div.inner div.bottomBlock ul.menuList li {
+    width: auto;
+    padding-left: 40px;
+    text-align: left;
+    border: none;
+  }
+
+  header div.inner div.bottomBlock ul.menuList li:first-child {
+    width: auto;
+  }
+
+  header div.inner div.bottomBlock ul.menuList li:last-child {
+    border: none;
+  }
+
+  header div.inner div.bottomBlock ul.menuList li a {
+    text-decoration: underline;
+  }
+
+  header div.inner div.bottomBlock ul.menuList.open {
+    transform: translateY(0);
+    transition: 0.4s;
   }
 }

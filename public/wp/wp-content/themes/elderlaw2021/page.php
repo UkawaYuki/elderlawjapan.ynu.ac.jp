@@ -8,7 +8,7 @@ if (have_posts()) {
     <!-------------------------------------------- CONTENT -------------------------------------------->
     <div id="content">
       <!-- -->
-      <div class="breadcrumbs pconly">
+      <div class="breadcrumbs">
         <ul><?php if (function_exists('bcn_display')) {
               bcn_display();
             } ?></ul>
@@ -19,11 +19,6 @@ if (have_posts()) {
         <div class="inner page">
           <?php if (!is_page(2) && !is_page(6) && !is_page(8) && !is_page(10)) { ?><h1><?php the_title(); ?></h1><?php } ?>
           <?php the_content(); ?>
-        </div>
-        <div class="breadcrumbs sponly">
-          <ul><?php if (function_exists('bcn_display')) {
-                bcn_display();
-              } ?></ul>
         </div>
         <!-- SIDEBAR -->
         <div class="sidebar">

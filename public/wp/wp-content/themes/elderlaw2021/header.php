@@ -36,6 +36,7 @@ mb_internal_encoding("UTF-8");
   <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
   <script type="text/javascript" src="/js/public.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
   <?php if (is_home()) { ?>
     <script type="text/javascript" src="/js/index.js"></script>
   <?php } ?>
@@ -87,8 +88,8 @@ mb_internal_encoding("UTF-8");
           <h1><a href="/"><img src="/img/logo_header.png" width="215" height="50" alt="高齢者法Japan - 横浜国立大学" /></a></h1>
           <div id="burger" class="burger"><span></span><span></span><span></span></div>
           <ul class="menuList">
-            <li><a href="/about/" class="btn<?php if (is_page(2) || $post->post_parent == 2) { ?> active<?php } ?>">高齢者法研究会<br />について</a></li>
-            <li><a href="/domestic/" class="btn<?php if (is_page(6) || $post->post_parent == 6 || get_post($post->post_parent)->post_parent == 6) { ?> active<?php } ?>">高齢者法情報<br />（国内）</a></li>
+            <li><a href="/about/" class="btn<?php if (is_page(2) || $post->post_parent == 2) { ?> active<?php } ?>">高齢者法研究会<br class="pconly" />について</a></li>
+            <li><a href="/domestic/" class="btn<?php if (is_page(6) || $post->post_parent == 6 || get_post($post->post_parent)->post_parent == 6) { ?> active<?php } ?>">高齢者法情報<br class="pconly" />（国内）</a></li>
             <li><a href="/precedents/" class="btn<?php if (is_page(8) || $post->post_parent == 8) { ?> active<?php } ?>">裁判例情報</a></li>
             <!-- <li><a href="/oversea/" class="btn<?php //if(is_page(10) || $post->post_parent == 10){
                                                     ?> active<?php //}

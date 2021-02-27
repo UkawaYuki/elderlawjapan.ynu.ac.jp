@@ -69,15 +69,16 @@ mb_internal_encoding("UTF-8");
             </ul>
           </div>
         </div>
-        <div class="block">
+        <!-- <div class="block">
           <h3><a href="/oversea/" class="btn">高齢者法情報（海外）</a></h3>
           <div class="main">
             <ul class="list">
-              <?php wp_list_pages("child_of=10&exclude=92&title_li="); ?>
+              <?php //wp_list_pages("child_of=10&exclude=92&title_li=");
+              ?>
             </ul>
             <p class="linkBtn"><a href="/oversea/related-agencies/" class="btn">関連諸機関</a></p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
