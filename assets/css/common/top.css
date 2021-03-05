@@ -41,7 +41,12 @@
   }
 
   #content div.indexVisualWrap div.right div.inner p.linkBtn {
+    width: auto;
     padding-bottom: 55px;
+  }
+
+  #content div.indexVisualWrap div.right div.inner p.linkBtn a {
+    width: auto;
   }
 
   #content div.indexNewsWrap {

@@ -85,6 +85,12 @@ header div.inner div.bottomBlock ul.menuList li:last-child a {
     justify-content: space-between;
   }
 
+  header div.inner div.bottomBlock.open {
+    position: fixed;
+    z-index: 3;
+    width: calc(100% - 40px);
+  }
+
   header div.inner div.bottomBlock h1,
   header div.inner div.bottomBlock p.siteTitle {
     z-index: 3;
