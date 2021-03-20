@@ -17,10 +17,18 @@
     <div class="pageReportList">
 
       <?php
-      query_posts('post_type=post&posts_per_page=9&category_name=report&paged=' . get_query_var("paged"));
-      if (have_posts()) {
-        while (have_posts()) {
-          the_post();
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      $the_query = new WP_Query(
+        array(
+          'post_type'      => 'post',
+          'category_name' => 'report',
+          'posts_per_page' => 9,
+          'paged' => $paged,
+        )
+      );
+      if ($the_query->have_posts()) {
+        while ($the_query->have_posts()) {
+          $the_query->the_post();
           $str = get_post_meta($post->ID, "dateEnd", TRUE);
           if (in_category("activity")) {
             $nCat = "activity";
@@ -47,7 +55,11 @@
             </a></div>
       <?php }
       } ?>
-      <?php the_posts_pagination("mid_size=2&prev_text=前へ&next_text=次へ"); ?>
+      <?php
+      wp_reset_postdata(); ?>
+      <?php if (subPagination()) {
+        echo subPagination();
+      } ?>
     </div>
 
     <!-- SIDEBAR -->

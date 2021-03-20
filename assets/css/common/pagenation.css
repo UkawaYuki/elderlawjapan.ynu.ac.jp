@@ -1,0 +1,4 @@
+.nav-links ul {
+  display: flex;
+  flex-wrap: wrap;
+}

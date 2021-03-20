@@ -8,7 +8,7 @@
 }
 
 #content div.indexInfoWrap div.inner div.listWrap {
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 @media (max-width: 767px) {

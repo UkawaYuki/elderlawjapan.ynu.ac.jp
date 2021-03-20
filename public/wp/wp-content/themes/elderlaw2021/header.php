@@ -91,9 +91,7 @@ mb_internal_encoding("UTF-8");
             <li><a href="/about/" class="btn<?php if (is_page(2) || $post->post_parent == 2) { ?> active<?php } ?>">高齢者法研究会<br class="pconly" />について</a></li>
             <li><a href="/domestic/" class="btn<?php if (is_page(6) || $post->post_parent == 6 || get_post($post->post_parent)->post_parent == 6) { ?> active<?php } ?>">高齢者法情報<br class="pconly" />（国内）</a></li>
             <li><a href="/precedents/" class="btn<?php if (is_page(8) || $post->post_parent == 8) { ?> active<?php } ?>">裁判例情報</a></li>
-            <!-- <li><a href="/oversea/" class="btn<?php //if(is_page(10) || $post->post_parent == 10){
-                                                    ?> active<?php //}
-                                                              ?>">高齢者法情報<br />（海外）</a></li> -->
+            <li><a href="/oversea/" class="btn<?php if (is_page(10) || $post->post_parent == 10) { ?> active<?php } ?>">高齢者法情報<br />（海外）</a></li>
             <li><a href="/report/" class="btn<?php if (is_page("report") || is_category() || is_single() && !in_category("news")) { ?> active<?php } ?>">活動レポート</a></li>
             <!-- <li><a href="/member-login/" class="btn">会員ログイン</a></li> -->
           </ul>

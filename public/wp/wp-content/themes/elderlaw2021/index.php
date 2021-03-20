@@ -33,14 +33,21 @@ mb_internal_encoding("UTF-8");
     <div class="right">
       <ul class="newsList">
         <?php
-        query_posts('post_type=post&showposts=3&category_name=news');
-        if (have_posts()) {
-          while (have_posts()) {
-            the_post();
+        $the_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'category_name' => 'news',
+            'posts_per_page' => 3,
+          )
+        );
+        if ($the_query->have_posts()) {
+          while ($the_query->have_posts()) {
+            $the_query->the_post();
         ?>
             <li><a href="<?php the_permalink(); ?>" class="btn"><span class="date"><?php echo get_post_time('Y.m.d'); ?></span><span class="title"><?php the_title(); ?></span></a></li>
         <?php }
-        } ?>
+        }
+        wp_reset_postdata(); ?>
       </ul>
       <p class="btnMore"><a href="/news/">一覧を見る</a></p>
     </div>
@@ -88,10 +95,16 @@ mb_internal_encoding("UTF-8");
       <h2>活動レポート<span>高齢者法研究会の活動状況、<br class="sponly">会員の視察の報告などをお伝えします</span></h2>
       <div class="indexReportList">
         <?php
-        query_posts('post_type=post&showposts=1&category_name=activity');
-        if (have_posts()) {
-          while (have_posts()) {
-            the_post();
+        $the_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'category_name' => 'activity',
+            'posts_per_page' => 1,
+          )
+        );
+        if ($the_query->have_posts()) {
+          while ($the_query->have_posts()) {
+            $the_query->the_post();
             $str = get_post_meta($post->ID, "dateEnd", TRUE);
         ?>
             <div class="block activity"><a href="<?php the_permalink(); ?>" class="btn">
@@ -112,12 +125,20 @@ mb_internal_encoding("UTF-8");
               </div>
             </div>
         <?php }
-        } ?>
+        }
+        wp_reset_postdata();
+        ?>
         <?php
-        query_posts('post_type=post&showposts=1&category_name=column');
-        if (have_posts()) {
-          while (have_posts()) {
-            the_post();
+        $the_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'category_name' => 'column',
+            'posts_per_page' => 1,
+          )
+        );
+        if ($the_query->have_posts()) {
+          while ($the_query->have_posts()) {
+            $the_query->the_post();
             $str = get_post_meta($post->ID, "dateEnd", TRUE);
         ?>
             <div class="block column"><a href="<?php the_permalink(); ?>" class="btn">
@@ -138,12 +159,19 @@ mb_internal_encoding("UTF-8");
               </div>
             </div>
         <?php }
-        } ?>
+        }
+        wp_reset_postdata(); ?>
         <?php
-        query_posts('post_type=post&showposts=1&category_name=oversea');
-        if (have_posts()) {
-          while (have_posts()) {
-            the_post();
+        $the_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'category_name' => 'oversea',
+            'posts_per_page' => 1,
+          )
+        );
+        if ($the_query->have_posts()) {
+          while ($the_query->have_posts()) {
+            $the_query->the_post();
             $str = get_post_meta($post->ID, "dateEnd", TRUE);
         ?>
             <div class="block oversea"><a href="<?php the_permalink(); ?>" class="btn">
@@ -164,12 +192,19 @@ mb_internal_encoding("UTF-8");
               </div>
             </div>
         <?php }
-        } ?>
+        }
+        wp_reset_postdata(); ?>
         <?php
-        query_posts('post_type=post&showposts=1&category_name=domestic');
-        if (have_posts()) {
-          while (have_posts()) {
-            the_post();
+        $the_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'category_name' => 'domestic',
+            'posts_per_page' => 1,
+          )
+        );
+        if ($the_query->have_posts()) {
+          while ($the_query->have_posts()) {
+            $the_query->the_post();
             $str = get_post_meta($post->ID, "dateEnd", TRUE);
         ?>
             <div class="block domestic"><a href="<?php the_permalink(); ?>" class="btn">
@@ -190,14 +225,9 @@ mb_internal_encoding("UTF-8");
               </div>
             </div>
         <?php }
-        } ?>
+        }
+        wp_reset_postdata(); ?>
       </div>
-      <!-- <div class="indexReportBtnList">
-        <p class="activity"><a href="/category/report/activity/">開催状況一覧</a></p>
-        <p class="column"><a href="/category/report/column/">会員コラム一覧</a></p>
-        <p class="oversea"><a href="/category/report/oversea/">視察報告（海外）一覧</a></p>
-        <p class="domestic"><a href="/category/report/domestic/">視察報告（国内）一覧</a></p>
-      </div> -->
     </div>
   </div>
 
