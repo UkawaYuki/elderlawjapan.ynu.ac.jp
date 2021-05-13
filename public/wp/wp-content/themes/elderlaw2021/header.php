@@ -40,6 +40,7 @@ mb_internal_encoding("UTF-8");
   <?php if (is_home()) { ?>
     <script type="text/javascript" src="/js/index.js"></script>
   <?php } ?>
+  <?php wp_head() ?>
 </head>
 
 <body id="top">
